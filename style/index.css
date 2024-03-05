@@ -52,7 +52,7 @@ body {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  background-image: url('../img/login.svg');
+  background-image: url("../img/login.svg");
   background-position: center;
   background-size: contain;
   width: 30px;
@@ -68,7 +68,8 @@ body {
 }
 
 .grid {
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 0 10px;
 }
 
 .card {
@@ -100,7 +101,7 @@ body {
 .card__download,
 .photo__download {
   background-color: rgba(0, 0, 0, 0.3);
-  background-image: url('../img/download.svg');
+  background-image: url("../img/download.svg");
   background-size: 20px;
   background-position: center;
   background-repeat: no-repeat;
@@ -120,14 +121,14 @@ body {
 }
 
 .photo__wrapper {
-  width: max-content;
+  /* width: max-content;
   display: grid;
   max-width: 100%;
   grid-template-areas:
-    'photo photo'
-    'author controls';
+    "photo photo"
+    "author controls";
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 20px; */
 }
 
 .photo__author {
@@ -153,15 +154,14 @@ body {
 }
 
 .card__photo-like_user {
-
 }
 
 .card__photo-like {
   position: absolute;
   left: 5px;
   bottom: 5px;
-background-color: transparent;
-  background-image: url('../img/like.svg');
+  background-color: transparent;
+  background-image: url("../img/like.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ background-color: transparent;
 
 .photo__like {
   background-color: transparent;
-  background-image: url('../img/like.svg');
+  background-image: url("../img/like.svg");
   background-size: 20px;
   background-position: left 3px center;
   background-repeat: no-repeat;
@@ -184,20 +184,19 @@ background-color: transparent;
   height: 30px;
   cursor: pointer;
   padding-left: 30px;
-  border: 1px solid #ccc
+  border: 1px solid #ccc;
 }
 
 .photo__like_o {
-  background-image: url('../img/o-like.svg');
+  background-image: url("../img/o-like.svg");
 }
 
 @media (max-width: 480px) {
   .photo__wrapper {
-   
     grid-template-columns: 1fr;
     grid-template-areas:
-      'photo'
-      'controls'
-      'author';
+      "photo"
+      "controls"
+      "author";
   }
 }
