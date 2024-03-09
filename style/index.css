@@ -53,12 +53,17 @@ body {
   cursor: pointer;
   background-color: transparent;
   background-image: url("../img/login.svg");
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position:right;
   background-size: contain;
   width: 30px;
-  height: 30px;
+  height: 30px;  
 }
-
+.active-sesion{
+  width: 250px;
+  font-size: 16px;
+  font-weight: 900;
+}
 .header__login-img {
   display: block;
 }
